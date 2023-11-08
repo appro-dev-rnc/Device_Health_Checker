@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5499C7"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/txt_button_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on RUN DEVICE CHECKER button to perform device functionality check."
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_button_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Following checks will be performed:\n*Bluetooth\n*Camera\n*Gyroscope\n*Device Root status"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:lineSpacingExtra="3dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_run_checker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Device Checker"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
